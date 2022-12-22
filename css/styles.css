@@ -172,7 +172,6 @@ body::-webkit-scrollbar-thumb{
   align-items: center;
   border-bottom: 1px solid rgb(53, 53, 53);
 }
-
 .main__projects-container__content{
   width: 40%;
 }

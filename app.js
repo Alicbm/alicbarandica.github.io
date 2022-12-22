@@ -1,8 +1,13 @@
-// This code is for the menu action
-// const menuListClose = document.getElementById('menu-list');
-// const iconMenuHeader = document.getElementById('menu-icon-header').addEventListener('click', () =>{
-//   menuListClose.classList.toggle('menu-list-open');
-// });
+//Code for the menu action
+const button = document.getElementById('toggle-menu');
+const menu = document.querySelector('.header__container-navbar__list');
+
+button.addEventListener('click', () => {
+  const showMenu = document.querySelector('.list__menu-show');
+  showMenu ? 
+  menu.classList.remove('list__menu-show')
+  : menu.classList.add('list__menu-show');
+})
 
 // This code is for create the slider
 window.addEventListener('load', function () {
