@@ -13,7 +13,7 @@ button.addEventListener('click', () => {
 window.addEventListener('load', function () {
   new Glider(document.querySelector('.main__skills-container__skills'), {
 
-    slidesToShow: 3,
+    slidesToShow: 1,
     dots: '.slider-indicators-container',
     draggable: true,
     arrows: {
