@@ -1,0 +1,38 @@
+:root{
+  --yellow:#bdcd14;
+  --gray:#a4a4a3;
+  --black:#000;
+  --light-black: #060606;
+}
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html{
+  font-size: 62.5%;
+  font-family: 'Trispace', sans-serif;
+  scroll-behavior: smooth;
+}
+body{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  color: var(--gray);
+}
+body::-webkit-scrollbar{
+  width: 10px;
+  background: rgba(0, 0, 0, 1);
+}
+body::-webkit-scrollbar-thumb{
+  width: 10px;
+  border-radius: 10px;
+  background-color: var(--yellow);
+}
+.hidden{
+  opacity: 0;
+  transition: all 3s;
+}
+.show{
+  opacity: 1;
+}

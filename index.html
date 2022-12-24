@@ -5,11 +5,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Alic Barandica | Portfolio</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
-  <!-- <link rel="stylesheet" href="./css/styles.css"> -->
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="./css/mobile.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/footer.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Trispace:wght@200;300;500;800&display=swap" rel="stylesheet">
@@ -27,15 +28,15 @@
           <img src="./tools/menu.png" alt="">
         </div>
         <ul class="header__container-navbar__list">
-          <li class="active">Home</li>
-          <li>About me</li>
-          <li>Projects</li>
-          <li>Skills</li>
-          <li>Contact me</li>
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact me</a></li>
         </ul>
       </nav>
     </div>
-    <div class="header__content">
+    <div class="header__content" id="home">
       <div class="header__content-welcome">
         <p>Hello</p>
         <h1>I'm Alic</h1>
@@ -45,13 +46,13 @@
   </header>
   <main class="main">
     <section class="main__aboutme">
-      <div class="main__aboutme-phrase">
+      <div class="main__aboutme-phrase" id="about">
         <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit, iure nesciunt deleniti quia nihil"</p>
         <p>Aristóteles</p>
       </div>
       <div class="main__aboutme-myself">
         <img src="./images/aboutme.png" alt="">
-        <div class="main__aboutme-myself__info">
+        <div class="main__aboutme-myself__info hidden">
           <h2>Who am I?</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, laboriosam hic tenetur, numquam voluptatum
             perferendis incidunt nostrum soluta consectetur magnam nulla harum placeat perspiciatis. Enim perferendis
@@ -60,44 +61,44 @@
       </div>
     </section>
 
-    <section class="main__projects">
+    <section class="main__projects" id="projects">
       <h2 class="main__projects-title">My Projects</h2>
       <article class="main__projects-container">
         <img src="./video/todo-dark.gif" alt="Todo App gif" class="todo-app-gif">
-        <div class="main__projects-container__content">
+        <div class="main__projects-container__content hidden">
           <h3>Todo App</h3>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea nihil vero nostrum eos assumenda, eaque, ex doloremque corrupti placeat cupiditate iusto ratione possimus enim sit amet, consectetur adipisicing elit. Facere</p>
           <div class="main__projects-container__button">
-            <button>Visit site</button>
-            <button>GitHub</button>
+            <button><a href="">Visit site</a></button>
+            <button><a href="https://github.com/Alicbm/todo-app">GitHub</a></button>
           </div>
         </div>
       </article>
       <article class="main__projects-container">
         <img src="./images/pelisflix.png" alt="Pelisflix"  class="main__projects-container__img">
-        <div class="main__projects-container__content">
+        <div class="main__projects-container__content hidden">
           <h3>Pelisflix</h3>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea nihil vero nostrum eos assumenda, eaque, ex doloremque corrupti placeat cupiditate iusto ratione possimus enim sit amet, consectetur adipisicing elit. Facere</p>
           <div class="main__projects-container__button">
-            <button>Visit site</button>
-            <button>GitHub</button>
+            <button><a href="">Visit site</a></button>
+            <button><a href="https://github.com/Alicbm/pelisflix">GitHub</a></button>
           </div>
         </div>
       </article>
       <article class="main__projects-container">
         <img src="./images/weather.png" alt="Weather App"  class="main__projects-container__img">
-        <div class="main__projects-container__content">
+        <div class="main__projects-container__content hidden">
           <h3>Weather App</h3>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea nihil vero nostrum eos assumenda, eaque, ex doloremque corrupti placeat cupiditate iusto ratione possimus enim sit amet, consectetur adipisicing elit. Facere</p>
           <div class="main__projects-container__button">
-            <button>Visit site</button>
-            <button>GitHub</button>
+            <button><a href="">Visit site</a></button>
+            <button><a href="https://github.com/Alicbm/weather-app">GitHub</a></button>
           </div>
         </div>
       </article>
     </section>
 
-    <section class="main__skills">
+    <section class="main__skills" id="skills">
       <h2 class="main__skills-tittle">My Skills</h2>
       <button class="left-button-slider" aria-label="Before">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 278.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg>  
@@ -148,23 +149,23 @@
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M342.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L274.7 256 105.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>      </button>
     </section>
   </main>
-  <footer class="footer">
+  <footer class="footer" id="contact">
     <h2 class="footer__title">Contact me</h2>
     <div class="footer_contactme">
       <div>
-        <a href="">
+        <a href="https://www.linkedin.com/in/alic-barandica/" target="_blank">
           <img src="./tools/linkedin.png" alt="Linkedin">
           <p>Linkedin</p>
         </a>
       </div>
       <div>
-        <a href="">
+        <a href="https://github.com/Alicbm" target="_blank">
           <img src="./tools/github.png" alt="GitHub">
           <p>GitHub</p>
         </a>
       </div>
       <div>
-        <a href="">
+        <a href=""  target="_blank">
           <img src="./tools/email.png" alt="Email">
           <p>alicmejia175@gmail.com</p>
         </a>
@@ -174,6 +175,7 @@
       <p>Don't forget, you're amazing 😎.</p>
     </div>
   </footer>
+  <script defer src="./animation.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
   <script src="./app.js"></script>
 </body>
