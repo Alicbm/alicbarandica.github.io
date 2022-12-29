@@ -5,6 +5,8 @@
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 9)), url('../images/portfolio-medium.jpg');
   background-repeat: no-repeat;
   background-position: center;
+  overflow: hidden;
+  font-family: var(--font-title);
 }
 
 .header__container-head--logo {
@@ -20,7 +22,8 @@
 }
 
 .header__container-head--logo img {
-  width: 90px;
+  width: 120px;
+  height: 40px;
   animation: hello 1s ease-in-out forwards;
 }
 
@@ -58,6 +61,7 @@
 }
 .header__container-navbar__list li a.active{
   color: var(--yellow);
+  font-weight: bold;
   line-height: 3rem;
   border-bottom: 3px solid var(--yellow);
 }
@@ -132,7 +136,8 @@
   }
 
   .header__container .header__container-head--logo img {
-    width: 100px;
+    width: 135px;
+    height: 40px;
   }
 
   .header__container-navbar{
@@ -165,7 +170,7 @@
   /*  */
   .header__content {
     width: 80%;
-    height: 70%;
+    height: 90%;
   }
 
   .header__content-welcome p {
@@ -180,12 +185,20 @@
 
 @media(min-width:1000px) {
   .header {
+    max-width: 1900px;
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 9)), url('../images/portfolio-large.jpg');
     background-repeat: no-repeat;
     background-position: center;
+    margin: 0 auto;
+  }
+  .header__container{
+    max-width: 1300px;
+    margin: 0 auto;
   }
   .header__content {
     width: 80%;
     height: 80%;
+    max-width: 1300px;
+    margin: 0 auto;
   }
 }

@@ -9,7 +9,22 @@ button.addEventListener('click', () => {
   : menu.classList.add('list__menu-show');
 })
 
+const daySelect = (element) => {
+  document.querySelector('.active').classList.remove('active');
+  element.classList.add('active');
+}
 
+const home = document.querySelector('.home');
+const about = document.querySelector('.about');
+const projects = document.querySelector('.projects');
+const skills = document.querySelector('.skills');
+const contact = document.querySelector('.contact');
+
+home.addEventListener('click', () => daySelect(home))
+about.addEventListener('click', () => daySelect(about))
+projects.addEventListener('click', () => daySelect(projects))
+skills.addEventListener('click', () => daySelect(skills))
+contact.addEventListener('click', () => daySelect(contact))
 
 // This code is for create the slider
 window.addEventListener('load', function () {
