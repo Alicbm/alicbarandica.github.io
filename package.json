@@ -1,0 +1,23 @@
+{
+  "name": "my-web-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alicbm/my-web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alicbm/my-web/issues"
+  },
+  "homepage": "https://github.com/Alicbm/my-web#readme",
+  "dependencies": {
+    "glider-js": "^1.7.8"
+  }
+}
